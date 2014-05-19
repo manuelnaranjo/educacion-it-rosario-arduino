@@ -85,6 +85,8 @@ void loop() {
      updateDisplay();
    lcd.setCursor(0, 1);
    sensor = analogRead(5);
+   Serial.print(millis());
+   Serial.print(" ");
    Serial.println(sensor);
    lcd.print(sensor*5000.0/1024);
    lcd.setCursor(6, 1);
